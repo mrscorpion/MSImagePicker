@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E7b-DF-E7k">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3DX-PU-UU3">
+            <objects>
+                <viewController id="E7b-DF-E7k" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kS5-WS-Tw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="7M8-Tt-zY8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uY1-gW-K4b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tmp-MX-GYq" userLabel="TopContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-7Z-c34">
+                                        <rect key="frame" x="20" y="55" width="280" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="HD5-gn-p8I"/>
+                                            <constraint firstAttribute="height" constant="30" id="fAk-xU-0GI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="piC-on-gQK"/>
+                                        </constraints>
+                                        <state key="normal" title="pick multi-photos"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="HD5-gn-p8I"/>
+                                                <exclude reference="piC-on-gQK"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="pickPhotoButtonClick:" destination="E7b-DF-E7k" eventType="touchUpInside" id="xfn-OB-6VE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1715644113" green="0.94983992740000001" blue="0.50998662080000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CCT-7Z-c34" secondAttribute="trailing" constant="20" id="HDU-57-GXr"/>
+                                    <constraint firstItem="CCT-7Z-c34" firstAttribute="leading" secondItem="Tmp-MX-GYq" secondAttribute="leading" constant="20" id="bPy-Gi-TGO"/>
+                                    <constraint firstAttribute="height" constant="120" id="dP6-xn-rMb"/>
+                                    <constraint firstItem="CCT-7Z-c34" firstAttribute="top" secondItem="Tmp-MX-GYq" secondAttribute="top" constant="55" id="r64-7s-oVB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tmp-MX-GYq" firstAttribute="leading" secondItem="uY1-gW-K4b" secondAttribute="leading" id="8gF-5q-IGh"/>
+                            <constraint firstItem="Tmp-MX-GYq" firstAttribute="top" secondItem="uY1-gW-K4b" secondAttribute="top" id="Xgm-wm-GPs"/>
+                            <constraint firstAttribute="trailing" secondItem="Tmp-MX-GYq" secondAttribute="trailing" id="nrQ-o2-Vnq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZH6-AZ-Ghb" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
